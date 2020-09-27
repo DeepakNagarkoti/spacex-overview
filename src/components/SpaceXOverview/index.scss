@@ -1,0 +1,48 @@
+$mob: '(max-width: 700px)';
+
+body {
+  background-color: #E8E8E8;
+
+  .heading {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: .5rem;
+  }
+
+  .filter-with-card {
+    display: flex;
+
+    @media #{$mob} {
+      display: block;
+    }
+
+    .filter-section {
+      width: 20%;
+
+      @media #{$mob} {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 701px) and (max-width: 800px) {
+        width: 25%;
+      }
+      @media screen and (min-width: 801px) and (max-width: 1024px) {
+        width: 40%;
+      }
+    }
+
+    .card-section {
+      width: 80%;
+      text-align: center;
+
+      @media #{$mob} {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+    width: 100%;
+  }
+}

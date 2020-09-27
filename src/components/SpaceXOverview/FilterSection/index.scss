@@ -1,0 +1,81 @@
+$mob: '(max-width: 700px)';
+
+.filter-wrapper {
+  width: 86%;
+  display: inline-block;
+  padding: 1rem;
+  margin: .5rem;
+  background: white;
+
+  @media #{$mob} {
+    width: 88%;
+  }
+  @media screen and (min-width: 701px) and (max-width: 800px) {
+    width: 81%;
+  }
+
+  .sub-heading {
+    text-align: center;
+  }
+
+  hr {
+    margin: 0 4rem;
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: .5rem;
+    @media screen and (min-width: 701px) and (max-width: 800px) {
+      padding: 5px 7px;
+    }
+  }
+
+  .year-button:nth-child(even) {
+    margin-right: 3.5rem;
+
+    @media #{$mob} {
+      margin-left: 10%;
+    }
+    @media screen and (min-width: 701px) and (max-width: 800px) {
+      margin-right: .5rem;
+    }
+    @media screen and (min-width: 310px) and (max-width: 320px) {
+      margin-right: .5rem;
+    }
+  }
+
+  .launch-button:nth-child(odd) {
+    margin-right: 3.5rem;
+
+    @media #{$mob} {
+      margin-left: 10%;
+    }
+    @media screen and (min-width: 701px) and (max-width: 800px) {
+      margin-right: .5rem;
+    }
+    @media screen and (min-width: 310px) and (max-width: 320px) {
+      margin-right: .5rem;
+    }
+  }
+
+  .button-land-button {
+    @media #{$mob} {
+      margin-left: 8%;
+    }
+
+    .land-button:nth-child(even) {
+      margin-left: 3.5rem;
+      @media screen and (min-width: 701px) and (max-width: 800px) {
+        margin-left: .5rem;
+      }
+      @media screen and (min-width: 310px) and (max-width: 320px) {
+        margin-left: .5rem;
+      }
+    }
+  }
+}
