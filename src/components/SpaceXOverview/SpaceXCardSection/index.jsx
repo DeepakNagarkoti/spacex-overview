@@ -39,11 +39,10 @@ const SpaceXCardSection = (props) => {
   }, [pathname, yearFilter, launchFilter, landFilter])
   return (
     <>
-      {(spaceData.length >= 1 &&  spaceData !== 'error') ? spaceData.map((data, key) => {
+      {(spaceData.length >= 1 && spaceData !== 'error') && spaceData.map((data, key) => {
         return <SpaceXCard key={key} cardData={data} />
-      })
-        : <h2>{ERROR_MSG}</h2>
-      }
+      })}
+      { (spaceData === 'error') && <h2>{ERROR_MSG}</h2> }
     </>
   )
 }
