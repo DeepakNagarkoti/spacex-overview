@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SpaceXCard /> should render <SpaceXCard /> 1`] = `
+<DocumentFragment>
+  <div
+    class="space-card-wrapper"
+  >
+    <img
+      alt="space-img"
+      class="space-img"
+      src="a.com"
+    />
+    <p>
+      test #123
+    </p>
+    <h3>
+      Mission Ids:
+      <span>
+        1
+      </span>
+    </h3>
+    <h3>
+      Launch Year:
+      <span>
+        2XX1
+      </span>
+    </h3>
+    <h3>
+      Successful Launch:
+      <span>
+        true
+      </span>
+    </h3>
+    <h3>
+      Successful Landing:
+      <span>
+        true
+      </span>
+    </h3>
+  </div>
+</DocumentFragment>
+`;
