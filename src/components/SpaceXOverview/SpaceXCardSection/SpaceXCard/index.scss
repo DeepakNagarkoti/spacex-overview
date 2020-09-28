@@ -8,8 +8,20 @@ $mob: '(max-width: 700px)';
   margin: .5rem;
   background: white;
   img{background-color:#E8E8E8 }
-  @media screen and (min-width: 701px) and (max-width: 1024px) {
+  @media screen and (min-width: 701px) and (max-width: 1023px) {
     img{width: 15rem; }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    img{width: 10rem; }
+    width: 18%;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1349px) {
+    img{width: 12rem; }
+    width: 20%;
+  }
+  @media screen and (min-width: 1350px) and (max-width: 1639px) {
+    img{width: 14rem; }
+    width: 20%;
   }
   p{
     font-weight: 800;
